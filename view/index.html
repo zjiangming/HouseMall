@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="../dist/css/amazeui.min.css">
+    <link rel="stylesheet" href="../dist/css/app.css">
+    <link rel="stylesheet" href="../dist/css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div id="main">
+            <div class="main-head">
+                <div class="am-cf search-bar">
+                    <div class="am-fl">
+                        <form id="index-search" class="am-form am-form-inline">
+                            <div class="am-form-group">
+                                <select name="supply_type">
+                                    <option value="">供应类型</option>
+                                    <option value="1">出租</option>
+                                    <option value="2">转让</option>
+                                </select>
+                            </div>
+                            <div class="am-form-group">
+                                <select name="trade_type">
+                                    <option value="">行业</option>
+                                    <option value="1">酒店</option>
+                                    <option value="2">服装</option>
+                                </select>
+                            </div>
+                            <div class="am-form-group">
+                                <select name="district">
+                                    <option value="">区域</option>
+                                    <option value="1">天河区</option>
+                                    <option value="2">海珠区</option>
+                                </select>
+                            </div>
+                            <div class="am-form-group">                          
+                                <select name="area">
+                                    <option value="">面积</option>
+                                    <option value="7">50㎡以下</option>
+                                    <option value="8">50-100㎡</option>
+                                    <option value="9">100-300㎡</option>
+                                    <option value="10">300-600㎡</option>
+                                    <option value="11">600-1000㎡</option>
+                                    <option value="12">1000-2000㎡</option>
+                                    <option value="13">2000㎡以上</option>
+                                </select>
+                            </div>
+                            <div class="am-form-group">                          
+                                <input type="text" name="keyword" style="width: 240px;" placeholder="输入关键词">
+                            </div>
+                            <div class="am-form-group">                          
+                                <button type="button" class="am-btn am-btn-danger">搜索</button>
+                            </div>                             
+                        </form>
+                    </div>
+                    <div class="am-fr">
+                        <button type="button" class="am-btn am-btn-warning">
+                            <i class="am-icon-edit"></i> 免费发布信息
+                        </button>
+                    </div>
+                </div>
+                <div class="hot-cate">
+                    <ul>
+                        <li class="title">行业类别：</li>
+                        <li><a href="#">酒店宾馆</a></li>
+                        <li><a href="#">服装服饰</a></li>
+                        <li><a href="#">全部</a></li>
+                    </ul>
+                </div>
+                <div class="notice-box">
+                    <span class="label">
+                        <i class="am-icon-volume-up"></i>
+                        <b>最新公告：</b>
+                    </span>
+                    <div class="notice-content">
+                        <p>公告内容！公告内容！</p>
+                    </div>
+                </div>
+                <div class="new-product">
+                    <ul data-am-widget="gallery" class="am-gallery am-gallery-default" data-am-gallery="{ pureview: false }" >
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="#" class="">
+                                <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
+                                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="#" class="">
+                                <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
+                                    <h3 class="am-gallery-title">某天 也许会相遇 相遇在这个好地方</h3>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="#" class="">
+                                <img src="http://s.amazeui.org/media/i/demos/bing-3.jpg"  alt="不要太担心 只因为我相信"/>
+                                    <h3 class="am-gallery-title">不要太担心 只因为我相信</h3>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="#" class="">
+                                <img src="http://s.amazeui.org/media/i/demos/bing-4.jpg"  alt="终会走过这条遥远的道路"/>
+                                    <h3 class="am-gallery-title">终会走过这条遥远的道路</h3>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>                      
+                </div>
+            </div>
+
+            <div class="hot-news">
+                <div data-am-widget="titlebar" class="am-titlebar am-titlebar-default" >
+                    <h2 class="am-titlebar-title ">特价急转</h2>                
+                    <nav class="am-titlebar-nav">
+                        <a href="#more" class="">更多 &raquo;</a>
+                    </nav>
+                </div>
+                <div class="hot-news-content">
+                    <ul class="am-avg-sm-6">
+                        <li><a href="">低价急转！！新区沿街餐饮店对</a></li>
+                        <li><a href="">低价急转！！新区沿街餐饮店对</a></li>
+                        <li><a href="">低价急转！！新区沿街餐饮店对</a></li>
+                        <li><a href="">低价急转！！新区沿街餐饮店对</a></li>
+                        <li><a href="">低价急转！！新区沿街餐饮店对</a></li>
+                        <li><a href="">低价急转！！新区沿街餐饮店对</a></li>
+                        <li><a href="">低价急转！！新区沿街餐饮店对</a></li>
+                        <li><a href="">低价急转！！新区沿街餐饮店对</a></li>
+                    </ul>                        
+                </div>
+            </div>
+
+            <div class="hot-product">
+                <div data-am-widget="titlebar" class="am-titlebar am-titlebar-default" >
+                    <h2 class="am-titlebar-title ">名铺推荐</h2>                
+                    <nav class="am-titlebar-nav">
+                        <a href="#more" class="">更多 &raquo;</a>
+                    </nav>
+                </div>
+                <div class="hot-product-content content-border">
+                    <ul data-am-widget="gallery" class="am-gallery am-avg-md-4 am-avg-lg-6 am-gallery-default" data-am-gallery="{ pureview: false }" >
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="#" class="">
+                                <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg"  alt="远方 有一个地方 那里种有我们的梦想"/>
+                                    <h3 class="am-gallery-title">远方 有一个地方 那里种有我们的梦想</h3>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="#" class="">
+                                <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg"  alt="某天 也许会相遇 相遇在这个好地方"/>
+                                    <h3 class="am-gallery-title">某天 也许会相遇 相遇在这个好地方</h3>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="#" class="">
+                                <img src="http://s.amazeui.org/media/i/demos/bing-3.jpg"  alt="不要太担心 只因为我相信"/>
+                                    <h3 class="am-gallery-title">不要太担心 只因为我相信</h3>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="#" class="">
+                                <img src="http://s.amazeui.org/media/i/demos/bing-4.jpg"  alt="终会走过这条遥远的道路"/>
+                                    <h3 class="am-gallery-title">终会走过这条遥远的道路</h3>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="#" class="">
+                                <img src="http://s.amazeui.org/media/i/demos/bing-3.jpg"  alt="不要太担心 只因为我相信"/>
+                                    <h3 class="am-gallery-title">不要太担心 只因为我相信</h3>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="am-gallery-item">
+                                <a href="#" class="">
+                                <img src="http://s.amazeui.org/media/i/demos/bing-4.jpg"  alt="终会走过这条遥远的道路"/>
+                                    <h3 class="am-gallery-title">终会走过这条遥远的道路</h3>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>                       
+                </div>
+            </div>
+
+            <div class="case-product clearfix">
+                <div class="c-left">
+                    <div data-am-widget="titlebar" class="am-titlebar am-titlebar-default" >
+                        <h2 class="am-titlebar-title">成功案例</h2>                
+                        <nav class="am-titlebar-nav">
+                            <a href="#more" class="">更多 &raquo;</a>
+                        </nav>
+                    </div>
+                    <div class="am-list-news-bd content-border">
+                        <div class="am-u-sm-12">
+                            <ul class="am-list">
+                                <li class="am-list-item-dated">
+                                    <a href="##" class="am-list-item-hd ">我很囧，你保重....晒晒旅行中的那些囧！</a>
+                                </li>
+                                <li class="am-list-item-dated">
+                                    <a href="##" class="am-list-item-hd ">我最喜欢的一张画</a>
+                                </li>
+                                <li class="am-list-item-dated">
+                                    <a href="##" class="am-list-item-hd ">“你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-right">
+                    <div data-am-widget="titlebar" class="am-titlebar am-titlebar-default" >
+                        <h2 class="am-titlebar-title">成功案例</h2>                
+                        <nav class="am-titlebar-nav">
+                            <a href="#more" class="">更多 &raquo;</a>
+                        </nav>
+                    </div>
+                    <div class="am-list-news-bd content-border">
+                        <div class="am-u-sm-4">
+                            <ul class="am-list">
+                                <li class="am-list-item-dated">
+                                    <a href="##" class="am-list-item-hd ">我很囧，你保重....晒晒旅行中的那些囧！</a>
+                                </li>
+                                <li class="am-list-item-dated">
+                                    <a href="##" class="am-list-item-hd ">我最喜欢的一张画</a>
+                                </li>
+                                <li class="am-list-item-dated">
+                                    <a href="##" class="am-list-item-hd ">“你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="am-u-sm-4">
+                            <ul class="am-list">
+                                <li class="am-list-item-dated">
+                                    <a href="##" class="am-list-item-hd ">我很囧，你保重....晒晒旅行中的那些囧！</a>
+                                </li>
+                                <li class="am-list-item-dated">
+                                    <a href="##" class="am-list-item-hd ">我最喜欢的一张画</a>
+                                </li>
+                                <li class="am-list-item-dated">
+                                    <a href="##" class="am-list-item-hd ">“你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="am-u-sm-4">
+                            <ul class="am-list">
+                                <li class="am-list-item-dated">
+                                    <a href="##" class="am-list-item-hd ">我很囧，你保重....晒晒旅行中的那些囧！</a>
+                                </li>
+                                <li class="am-list-item-dated">
+                                    <a href="##" class="am-list-item-hd ">我最喜欢的一张画</a>
+                                </li>
+                                <li class="am-list-item-dated">
+                                    <a href="##" class="am-list-item-hd ">“你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="area-product">
+                <div class="am-tabs" data-am-tabs>
+                    <ul class="am-tabs-nav am-nav am-nav-tabs">
+                        <li class="am-active"><a href="#tab1">天河</a></li>
+                        <li><a href="#tab2">海珠</a></li>
+                    </ul>
+                    <nav class="am-titlebar-nav">
+                        <a href="#more" class="">更多 &raquo;</a>
+                    </nav>
+                    <div class="am-tabs-bd">
+                        <div class="am-tab-panel am-fade am-in am-active" id="tab1">
+                            <div class="am-u-sm-3">
+                                    <ul class="am-list">
+                                        <li class="am-list-item-dated">
+                                            <a href="##" class="am-list-item-hd ">我很囧，你保重....晒晒旅行中的那些囧！</a>
+                                        </li>
+                                        <li class="am-list-item-dated">
+                                            <a href="##" class="am-list-item-hd ">我最喜欢的一张画</a>
+                                        </li>
+                                        <li class="am-list-item-dated">
+                                            <a href="##" class="am-list-item-hd ">“你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！</a>
+                                        </li>
+                                    </ul>
+                            </div>
+                            <div class="am-u-sm-3">
+                                <ul class="am-list">
+                                    <li class="am-list-item-dated">
+                                        <a href="##" class="am-list-item-hd ">我很囧，你保重....晒晒旅行中的那些囧！</a>
+                                    </li>
+                                    <li class="am-list-item-dated">
+                                        <a href="##" class="am-list-item-hd ">我最喜欢的一张画</a>
+                                    </li>
+                                    <li class="am-list-item-dated">
+                                        <a href="##" class="am-list-item-hd ">“你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="am-u-sm-3">
+                                <ul class="am-list">
+                                    <li class="am-list-item-dated">
+                                        <a href="##" class="am-list-item-hd ">我很囧，你保重....晒晒旅行中的那些囧！</a>
+                                    </li>
+                                    <li class="am-list-item-dated">
+                                        <a href="##" class="am-list-item-hd ">我最喜欢的一张画</a>
+                                    </li>
+                                    <li class="am-list-item-dated">
+                                        <a href="##" class="am-list-item-hd ">“你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="am-u-sm-3">
+                                <ul class="am-list">
+                                    <li class="am-list-item-dated">
+                                        <a href="##" class="am-list-item-hd ">我很囧，你保重....晒晒旅行中的那些囧！</a>
+                                    </li>
+                                    <li class="am-list-item-dated">
+                                        <a href="##" class="am-list-item-hd ">我最喜欢的一张画</a>
+                                    </li>
+                                    <li class="am-list-item-dated">
+                                        <a href="##" class="am-list-item-hd ">“你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="am-tab-panel am-fade" id="tab2">
+                            走在忠孝东路<br>徘徊在茫然中<br>在我的人生旅途<br>选择了多少错误<br>我在睡梦中惊醒<br>感叹悔言无尽<br>恨我不能说服自己<br>接受一切教训<br>让生命去等候<br>等候下一个漂流<br>让生命去等候<br>等候下一个伤口
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="type-product">
+                <div data-am-widget="titlebar" class="am-titlebar am-titlebar-default" >
+                    <h2 class="am-titlebar-title">按行业</h2>                
+                    <nav class="am-titlebar-nav">
+                        <ul class="tags-list">
+                            <li><a href="">洒楼</a></li>
+                            <li><a href="">餐饮</a></li>
+                        </ul>
+                        <a href="#more" class="">更多 &raquo;</a>
+                    </nav>
+                </div>
+                <div class="am-list-news-bd content-border">
+                    <div class="am-u-sm-3">
+                        <ul class="am-list">
+                            <li class="am-list-item-dated">
+                                <a href="##" class="am-list-item-hd ">我很囧，你保重....晒晒旅行中的那些囧！</a>
+                            </li>
+                            <li class="am-list-item-dated">
+                                <a href="##" class="am-list-item-hd ">我最喜欢的一张画</a>
+                            </li>
+                            <li class="am-list-item-dated">
+                                <a href="##" class="am-list-item-hd ">“你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="am-u-sm-3">
+                        <ul class="am-list">
+                            <li class="am-list-item-dated">
+                                <a href="##" class="am-list-item-hd ">我很囧，你保重....晒晒旅行中的那些囧！</a>
+                            </li>
+                            <li class="am-list-item-dated">
+                                <a href="##" class="am-list-item-hd ">我最喜欢的一张画</a>
+                            </li>
+                            <li class="am-list-item-dated">
+                                <a href="##" class="am-list-item-hd ">“你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="am-u-sm-3">
+                        <ul class="am-list">
+                            <li class="am-list-item-dated">
+                                <a href="##" class="am-list-item-hd ">我很囧，你保重....晒晒旅行中的那些囧！</a>
+                            </li>
+                            <li class="am-list-item-dated">
+                                <a href="##" class="am-list-item-hd ">我最喜欢的一张画</a>
+                            </li>
+                            <li class="am-list-item-dated">
+                                <a href="##" class="am-list-item-hd ">“你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="am-u-sm-3">
+                        <ul class="am-list">
+                            <li class="am-list-item-dated">
+                                <a href="##" class="am-list-item-hd ">我很囧，你保重....晒晒旅行中的那些囧！</a>
+                            </li>
+                            <li class="am-list-item-dated">
+                                <a href="##" class="am-list-item-hd ">我最喜欢的一张画</a>
+                            </li>
+                            <li class="am-list-item-dated">
+                                <a href="##" class="am-list-item-hd ">“你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tool-items">
+                <ul class="am-avg-sm-3">
+                    <li><a href=""><img src="../dist/images/f1.jpg" alt=""></a></li>
+                    <li><a href=""><img src="../dist/images/f2.jpg" alt=""></a></li>
+                    <li><a href=""><img src="../dist/images/f3.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>        
+    </div>
+
+    <script src="../dist/js/jquery-2.2.4.min.js"></script>
+    <!--[if lte IE 8 ]>
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+    <script src="../dist/js/amazeui.ie8polyfill.min.js"></script>
+    <![endif]-->
+    <script src="../dist/js/amazeui.min.js"></script>
+</body>
+</html>

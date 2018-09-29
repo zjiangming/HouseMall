@@ -1,0 +1,163 @@
+/*
+* 内容主体样式
+*/
+.am-titlebar {
+    height: 40px;
+    border-bottom: 1px solid #0a628f;
+}
+.am-titlebar-default {
+    line-height: 39px;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #0e93d7;
+}
+.am-titlebar-default .am-titlebar-title,
+.am-titlebar-default a {
+    color: #fff;
+}
+.am-titlebar-default .am-titlebar-title {
+    font-size: 16px;
+}
+.am-titlebar-default .am-titlebar-title:before {    
+    border-left-color: transparent;
+}
+.content-border {
+    border: 1px solid #eee;
+}
+.content-border:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.am-nav-tabs>li.am-active>a, 
+.am-nav-tabs>li.am-active>a:focus, 
+.am-nav-tabs>li.am-active>a:hover {
+    background-color: #0e93d7;
+    color: #fff;
+}
+.am-tabs .am-nav-tabs {
+    border-bottom: 1px solid #0a628f;
+}
+.am-nav-tabs>li {
+    margin-bottom: 0;
+}
+.am-nav>li>a {
+    padding-left: 1.5em; 
+    padding-right: 1.5em; 
+}
+.am-tabs-bd .am-tab-panel {
+    padding: 0;
+}
+.am-list>li:first-child {
+    border-top: none;
+}
+.tags-list {
+    display: inline-block;
+}
+.tags-list li {
+    display: inline-block;
+    border: 1px #fff solid;
+    line-height: 18px;
+    margin-right: 10px;
+}
+.tags-list li a {
+    padding: 0 10px;
+    margin-right: 0 !important;
+}
+
+.main-head {}
+.search-bar {
+    background-color: #3bb4f2;
+    padding: 8px 20px;
+}
+.search-bar .am-form select {
+    padding-right: 30px;
+}
+.hot-cate {
+    background-color: #f9f9f9;
+    padding: 5px 20px;
+}
+.hot-cate ul li {
+    display: inline-block;
+}
+.hot-cate ul li.title {
+    font-weight: bold;
+}
+.hot-cate ul li a {
+    padding: 0 8px;
+}
+.notice-box {
+    position: relative;
+    padding: 5px 20px 5px 120px;
+    height: 30px;
+}
+.notice-box .label {
+    position: absolute;
+    left: 20px;
+    top: 5px;
+}
+.new-product:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.new-product .am-gallery li {
+    float: left;
+    width: 200px;
+}
+.new-product .am-gallery li img {
+    width: 190px;
+    height: 120px;
+}
+.hot-news-content {
+    border: 1px solid #eee;
+    padding: 15px 10px;
+}
+.hot-news-content li {
+    padding: 0 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.hot-news-content li a {
+    color: #dd514c;
+}
+
+.case-product .am-list>li:first-child {
+    border-top: none;
+}
+.case-product .c-left {
+    width: 300px;
+    float: left;
+}
+.case-product .c-right {
+    width: 890px;
+    float: right;
+}
+
+.area-product {
+    position: relative;
+}
+.area-product .am-titlebar-nav {
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+.area-product .am-tabs {
+    margin-top: 20px;
+}
+
+.type-product .tags-list {
+    float: left;
+    margin-left: 20px;
+}
+
+.tool-items {
+    margin-top: 20px;
+    text-align: center;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="../dist/css/amazeui.min.css">
+    <link rel="stylesheet" href="../dist/css/app.css">
+    <link rel="stylesheet" href="../dist/css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div id="main">
+            <div class="main-head">
+                <div class="am-cf search-bar">
+                    <div class="am-fl">
+                        <form id="index-search" class="am-form am-form-inline">
+                            <div class="am-form-group">
+                                <select name="supply_type">
+                                    <option value="">供应类型</option>
+                                    <option value="1">出租</option>
+                                    <option value="2">转让</option>
+                                </select>
+                            </div>
+                            <div class="am-form-group">
+                                <select name="trade_type">
+                                    <option value="">行业</option>
+                                    <option value="1">酒店</option>
+                                    <option value="2">服装</option>
+                                </select>
+                            </div>
+                            <div class="am-form-group">
+                                <select name="district">
+                                    <option value="">区域</option>
+                                    <option value="1">天河区</option>
+                                    <option value="2">海珠区</option>
+                                </select>
+                            </div>
+                            <div class="am-form-group">                          
+                                <select name="area">
+                                    <option value="">面积</option>
+                                    <option value="7">50㎡以下</option>
+                                    <option value="8">50-100㎡</option>
+                                    <option value="9">100-300㎡</option>
+                                    <option value="10">300-600㎡</option>
+                                    <option value="11">600-1000㎡</option>
+                                    <option value="12">1000-2000㎡</option>
+                                    <option value="13">2000㎡以上</option>
+                                </select>
+                            </div>
+                            <div class="am-form-group">                          
+                                <input type="text" name="keyword" style="width: 240px;" placeholder="输入关键词">
+                            </div>
+                            <div class="am-form-group">                          
+                                <button type="button" class="am-btn am-btn-danger">搜索</button>
+                            </div>                             
+                        </form>
+                    </div>
+                    <div class="am-fr">
+                        <button type="button" class="am-btn am-btn-warning">
+                            <i class="am-icon-edit"></i> 免费发布信息
+                        </button>
+                    </div>
+                </div>                
+            </div>
+            <div id="Bmap" style="height: 400px;margin-top: 10px;"></div>
+        </div>        
+    </div>
+
+    <script src="../dist/js/jquery-2.2.4.min.js"></script>
+    <!--[if lte IE 8 ]>
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+    <script src="../dist/js/amazeui.ie8polyfill.min.js"></script>
+    <![endif]-->
+    <script src="../dist/js/amazeui.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&amp;ak=Hc9xhrPFappE82G2cmBIoyUy"></script>
+    <script type="text/javascript" src="../dist/js/Bmap.js"></script>
+    <script>
+        var data = [{
+            lat: 116.404,
+            lng: 39.915,
+            title: '天安门',
+            imgUrl: 'http://lbsyun.baidu.com/jsdemo/img/tianAnMen.jpg',
+            content: '这是中华人民共和国天安门……'
+        },{
+            lat: 116.104,
+            lng: 39.915,
+            title: 'cc',
+            imgUrl: 'http://lbsyun.baidu.com/jsdemo/img/tianAnMen.jpg',
+            content: '这是cc……'
+        }]
+        var map = new _BMAP('Bmap')
+        map.addControl(['tl_control', 'tl_navigation'])
+        data.forEach(function(item) {
+            map.markerAdd(item)
+        })
+    </script>
+</body>
+</html>
